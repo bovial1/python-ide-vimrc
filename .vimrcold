@@ -1,0 +1,127 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Auto-completion
+Plugin 'Valloric/YouCompleteMe'
+
+" Status bar that show current virtualenv, git branch and more
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+" Code folding
+Plugin 'tmhedberg/SimpylFold'
+
+" Fast folding
+Plugin 'Konfekt/FastFold'
+
+" Check syntax when saving a file
+Plugin 'vim-syntastic/syntastic'
+
+" File browser
+Plugin 'scrooloose/nerdtree'
+
+Plugin 'jistr/vim-nerdtree-tabs'
+
+" Git integration from within vim
+Plugin 'tpope/vim-fugitive'
+
+" Python indentation
+Plugin 'vim-scripts/indentpython.vim'
+
+" Buffer list in tab line
+Plugin 'ap/vim-buftabline'
+
+" Buffer explorer and kep maps
+Plugin 'jlanzarotta/bufexplorer'
+
+" Unload buffer without closing window
+Plugin 'qpkorr/vim-bufkill'
+
+Plugin 'leafgarland/typescript-vim'
+
+Plugin 'pearofducks/ansible-vim'
+
+Plugin 'unblevable/quick-scope'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+" Buffers - explore/next/previous: Ctrl+E, Ctrl+N, Ctrl+B
+nnoremap <silent> <C-E> :BufExplorer<CR>
+nnoremap <silent> <C-N> :bn<CR>
+nnoremap <silent> <C-B> :bp<CR>
+nnoremap <silent> <C-P> :b#<CR>
+nnoremap <silent> <TAB> :b#<CR>
+
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+"colors zenburn
+color monokai
+
+" make space my leader key
+let mapleader = "\<Space>"
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
+
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+"python with virtualenv support
+"py << EOF
+"import os
+"import sys
+"if 'VIRTUAL_ENV' in os.environ:
+"  project_base_dir = os.environ['VIRTUAL_ENV']
+"  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+"  execfile(activate_this, dict(__file__=activate_this))
+"EOF
+
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+let g:nerdtree_tabs_open_on_console_startup=0
+
+set nu
+
+" Show status line (Powerline in our case) even when only one window open
+set laststatus=2
+
+" This will allow switching buffers without saving current file
+set hidden
+
+au BufNewFile,BufRead *.py
+    \set tabstop=4
+    \set softtabstop=4
+    \set shiftwidth=4
+    \set textwidth=79
+    \set expandtab
+    \set autoindent
+    \set fileformat=unix
+
+au FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab indentkeys-=<:>
+au FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+au FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+au FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+au FileType json setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
