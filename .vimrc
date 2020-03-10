@@ -19,6 +19,7 @@
 " git clone https://github.com/vim-scripts/vim-flake8.git
 " git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf ~/.fzf/install (or sudo dnf install fzf)
 " git clone https://github.com/junegunn/fzf.vim.git 
+" git clone https://github.com/ryanoasis/vim-devicons
 "
 " pip install flake8 into virtualenv
 " or pip/pip3 install as root to make available globally
