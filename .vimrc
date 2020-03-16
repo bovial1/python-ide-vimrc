@@ -10,6 +10,7 @@
 " git clone https://github.com/vim-scripts/buftabline.git
 " git clone https://github.com/jlanzarotta/bufexplorer.git
 " git clone https://github.com/vim-airline/vim-airline.git
+" git clone https://tpope.io/vim/fugitive.git
 " git clone https://github.com/tmhedberg/SimpylFold.git
 " git clone https://github.com/scrooloose/nerdtree.git
 " git clone https://github.com/unblevable/quick-scope.git
