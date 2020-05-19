@@ -23,6 +23,10 @@
 " git clone https://github.com/ryanoasis/vim-devicons
 " Download font Robotmon from here and install https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete.ttf
 "
+" If we want powershell
+" git clone https://github.com/PProvost/vim-ps1.git and manually copy the
+" files into ~/.vim directory
+"
 " pip install flake8 into virtualenv
 " or pip/pip3 install as root to make available globally
 "
