@@ -12,8 +12,6 @@
 " git clone https://github.com/vim-airline/vim-airline.git
 " git clone https://tpope.io/vim/fugitive.git
 " git clone https://github.com/tmhedberg/SimpylFold.git
-" git clone https://github.com/Konfekt/FastFold.git 
-" git clone https://github.com/zhimsel/vim-stay.git
 " git clone https://github.com/scrooloose/nerdtree.git
 " git clone https://github.com/unblevable/quick-scope.git
 " git clone https://github.com/w0rp/ale.git
@@ -23,12 +21,7 @@
 " git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf ~/.fzf/install (or sudo dnf install fzf)
 " git clone https://github.com/junegunn/fzf.vim.git 
 " git clone https://github.com/ryanoasis/vim-devicons
-" git clone https://github.com/hashivim/vim-hashicorp-tools.git
 " Download font Robotmon from here and install https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete.ttf
-"
-" If we want powershell
-" git clone https://github.com/PProvost/vim-ps1.git and manually copy the
-" files into ~/.vim directory
 "
 " pip install flake8 into virtualenv
 " or pip/pip3 install as root to make available globally
@@ -111,6 +104,11 @@ map <Leader>b Oimport pdb; pdb.set_trace()
 " Specify python linters for ALE 
 "let g:ale_linters_explicit = 1
 "let g:ale_linters = {'python':[]}
+
+" Set HashiCorp options
+let g:terraform_align=1
+let g:terraform_fold_sections=1
+let g:terraform_fmt_on_save=1
 
 " For Jenkinsfile
 au BufNewFile,BufRead Jenkinsfile setf groovy
