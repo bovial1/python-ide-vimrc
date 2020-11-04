@@ -108,7 +108,7 @@ map <Leader>b Oimport pdb; pdb.set_trace()
 " Set HashiCorp options
 let g:terraform_align=1
 let g:terraform_fold_sections=1
-let g:terraform_fmt_on_save=1
+"let g:terraform_fmt_on_save=1
 
 " For Jenkinsfile
 au BufNewFile,BufRead Jenkinsfile setf groovy
