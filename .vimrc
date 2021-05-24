@@ -2,7 +2,20 @@
 " Still not sure which one I prefer. Ale does checking in real time, flake8
 " when I hit F7 or on save
 "
+" On Centos 7, I compile vim from source
+"
+" yum install ncurses-devel
+" wget https://github.com/vim/vim/archive/master.zip
+" unzip master.zip
+" cd vim-master
+" cd src/
+" ./configure --with-features=huge --with-python-config-dir=/usr/local/lib/python3.6/config-3.6m-x86_64-linux-gnu --enable-python3interp
+" sudo make
+" sudo make install DESTDIR=~/.local
+" ln -s ~/.local/usr/local/bin/vim ~/bin/vim
+" alias vi=~/bin/vim
 " mkdir -p ~/.vim/pack/my-packages/start
+"
 " cd ~/.vim/pack/my-packages/start
 " git clone --recursive https://github.com/davidhalter/jedi-vim.git
 " git clone https://github.com/ervandew/supertab.git
