@@ -23,7 +23,7 @@
 " git clone https://github.com/vim-scripts/buftabline.git
 " git clone https://github.com/jlanzarotta/bufexplorer.git
 " git clone https://github.com/vim-airline/vim-airline.git
-" git clone https://tpope.io/vim/fugitive.git
+" git clone https://github.com/tpope/vim-fugitive.git 
 " git clone https://github.com/tmhedberg/SimpylFold.git
 " git clone https://github.com/scrooloose/nerdtree.git
 " git clone https://github.com/unblevable/quick-scope.git
@@ -84,11 +84,11 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 " Start without folds
 set foldlevelstart=99
 
-au FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab indentkeys-=<:>
+au FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab indentkeys-=<:> foldmethod=indent
 au FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
-au FileType json setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+au FileType json setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab foldmethod=indent
 
 " Allow Airline to format ALE errors 
 let g:airline#extensions#ale#enabled = 1
@@ -114,14 +114,14 @@ nnoremap <leader>at :ALEToggle<CR>
 nnoremap <leader>af :ALEFix<CR>
 
 " Quickly add break points
-map <Leader>b Oimport pdb; pdb.set_trace()
+map <Leader>b Oimport ipdb; ipdb.set_trace()
 
 " Make vim-flake8 check python files on save, otherwise call with F7
 " autocmd BufWritePost *.py call flake8#Flake8()
 "
 " Specify python linters for ALE 
 "let g:ale_linters_explicit = 1
-"let g:ale_linters = {'python':[]}
+let g:ale_linters = {'python':['flake8']}
 
 " Set HashiCorp options
 let g:terraform_align=1
