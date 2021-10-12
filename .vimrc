@@ -140,3 +140,7 @@ let g:minimap_highlight='Visual'
 "
 " Command line abbreviation to open files in same directory as current
 cabbr <expr> %% expand('%:p:h')
+
+" vim-airline displays some funny characters without setting these
+set t_u7=
+set t_RV=
