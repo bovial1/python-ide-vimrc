@@ -89,6 +89,7 @@ au FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au FileType json setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab foldmethod=indent
+au FileType ps1 setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab foldmethod=indent
 
 " Allow Airline to format ALE errors 
 let g:airline#extensions#ale#enabled = 1
