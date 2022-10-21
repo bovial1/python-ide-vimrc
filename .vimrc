@@ -17,7 +17,6 @@
 " mkdir -p ~/.vim/pack/my-packages/start
 "
 " cd ~/.vim/pack/my-packages/start
-" git clone --recursive https://github.com/davidhalter/jedi-vim.git
 " git clone https://github.com/ervandew/supertab.git
 " git clone https://github.com/vim-scripts/bufkill.vim.git
 " git clone https://github.com/vim-scripts/buftabline.git
@@ -30,16 +29,17 @@
 " git clone https://github.com/w0rp/ale.git
 " git clone https://github.com/pearofducks/ansible-vim.git
 " git clone https://github.com/leafgarland/typescript-vim.git
-" git clone https://github.com/vim-scripts/vim-flake8.git
-" git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf ~/.fzf/install (or sudo dnf install fzf)
-" git clone https://github.com/junegunn/fzf.vim.git 
 " git clone https://github.com/ryanoasis/vim-devicons
 " git clone https://github.com/hashivim/vim-terraform.git
 " git clone https://github.com/hashivim/vim-hashicorp-tools.git
-" git clone https://github.com/pedrohdz/vim-yaml-folds.git
-" Requires code-minimap (rust app) to be installed
-" git clone https://github.com/wfxr/minimap.vim.git 
 " Download font Robotmon from here and install https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete.ttf
+"
+" Optional?
+" git clone --recursive https://github.com/davidhalter/jedi-vim.git
+" git clone https://github.com/pedrohdz/vim-yaml-folds.git
+" git clone https://github.com/junegunn/fzf.vim.git 
+" git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf ~/.fzf/install (or sudo dnf install fzf)
+" git clone https://github.com/vim-scripts/vim-flake8.git
 "
 " pip install flake8 into virtualenv
 " or pip/pip3 install as root to make available globally
@@ -89,7 +89,6 @@ au FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au FileType json setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab foldmethod=indent
-au FileType ps1 setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab foldmethod=indent
 
 " Allow Airline to format ALE errors 
 let g:airline#extensions#ale#enabled = 1
