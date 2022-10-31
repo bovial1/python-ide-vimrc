@@ -32,10 +32,10 @@
 " git clone https://github.com/ryanoasis/vim-devicons
 " git clone https://github.com/hashivim/vim-terraform.git
 " git clone https://github.com/hashivim/vim-hashicorp-tools.git
+" git clone --recursive https://github.com/davidhalter/jedi-vim.git
 " Download font Robotmon from here and install https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete.ttf
 "
 " Optional?
-" git clone --recursive https://github.com/davidhalter/jedi-vim.git
 " git clone https://github.com/pedrohdz/vim-yaml-folds.git
 " git clone https://github.com/junegunn/fzf.vim.git 
 " git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf ~/.fzf/install (or sudo dnf install fzf)
