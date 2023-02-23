@@ -27,7 +27,8 @@
 " [pycodestyle]
 " max-line-length = 100
 "
-"
+let g:airline_powerline_fonts = 1
+
 "color zenburn
 colorscheme monokai
 
